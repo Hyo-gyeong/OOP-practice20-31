@@ -1,4 +1,4 @@
-//ÄÄÇ»ÅÍÇĞ°ú 21090975 ½ÅÈ¿°æ
+//ì»´í“¨í„°í•™ê³¼ 21090975 ì‹ íš¨ê²½
 import java.util.Random;
 public class Practice31 {
 
@@ -8,7 +8,7 @@ public class Practice31 {
 		
 		displayArray(data);
 		
-		System.out.println("°¡Àå Å« ¼ıÀÚ´Â "+findMax(data)+"ÀÔ´Ï´Ù.");
+		System.out.println("ê°€ì¥ í° ìˆ«ìëŠ” "+findMax(data)+"ì…ë‹ˆë‹¤.");
 	}
 	
 	public static void displayArray(int[] iArray) {
@@ -24,7 +24,7 @@ public class Practice31 {
 	public static int findMax(int[] iArray) {
 		
 		int best = iArray[0];
-		for (int i = 0; i < iArray.length; i++) {
+		for (int i = 1; i < iArray.length; i++) { // i=0 ë¶€í„° ë³¼ í•„ìš” ì—†ìŒ.
 			if (best < iArray[i]) {
 				best = iArray[i];
 			}
